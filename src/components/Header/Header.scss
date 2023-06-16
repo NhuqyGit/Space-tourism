@@ -1,0 +1,186 @@
+.header-container{
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    .icon-start{
+        flex: 40%;
+        display: flex;
+        align-items: center;
+        svg{
+            margin-left: 49px;
+        }
+    }
+    .navbar{
+        width: 745px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+
+        .close-icon{
+            display: none;
+        }
+    }
+    .navbar-menu{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        .list-item{
+            // position: relative;
+            margin-right: 43px;
+            padding: 34px 0;
+            a{
+                position: relative;
+                text-decoration: none;
+                color: white;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 2.7px;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 34px 0;
+
+                span{
+                    font-weight: 700;
+                    letter-spacing: 2.7px;
+                    
+                }  
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 3px;
+                    background: white;
+                    bottom: 0;
+                    transition: 0.5s;
+                }
+    
+                &:hover{
+                    &:before{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .active{
+                &:before{
+                    width: 100% !important;
+                }
+            }
+
+        }
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    .header-line{
+        position: absolute;
+        width: 425px;
+        height: 1px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        left: 150px;
+
+    }
+}
+
+@media (max-width: 769px) {
+    .navbar{
+        width: 405px !important;
+        .navbar-menu{
+            justify-content: flex-start;
+            margin-left: 43px;
+            .list-item{
+                margin-right: 33px;
+                a{
+                    font-size: 12px !important;
+                    line-height: 17px;
+                    letter-spacing: 2.3625px;
+                }
+            }
+        }
+    }
+
+    .navbar-menu span{
+        display: none;
+    }
+
+    .header-line{
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .header-container{
+        position: unset;
+        padding: 24px;
+        .icon-start{
+            svg{
+                margin: 0;
+            }
+        }
+        .navbar{
+            position: absolute;
+            width: 254px !important;
+            top: 0;
+            right: 0;
+            height: 100%;
+            
+            .close-icon{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 33.95px 26.45px 63.95px 26.45px;
+            }
+            .navbar-menu{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                gap: 25px;
+                .list-item{
+                    margin: 0;
+                    margin-left: 32px;
+                    padding: 0;
+
+                    a{
+                        display: -webkit-inline-box;
+                        font-size: 16px !important;
+                        padding: 0;
+                        width: 100% !important;
+                        padding: 7px 0;
+                        span{
+                            display: inline-block;
+                            margin-right: 3px;
+                        }
+
+                        &::before{
+                            height: 0;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+
+                    .active{
+                        &:before{
+                            width: 4px !important;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .menu-icon{
+            display: block !important;
+            cursor: pointer;
+        }
+    }
+}
