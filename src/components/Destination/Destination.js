@@ -18,16 +18,16 @@ function Destination() {
                 <div className="planet-image" style={{backgroundImage: `url(${planet})`}}></div>
                 <div className="des-introduce">
                     <ul className="menu-planet">
-                        <li className="planet">
+                        <li className="planet" onClick={()=> setPlanet(moon)}>
                             <NavLink to="/destination/moon">MOON</NavLink>
                         </li>
-                        <li className="planet">
+                        <li className="planet" onClick={()=> setPlanet(mars)}>
                             <NavLink to="/destination/mars">MARS</NavLink>
                         </li>
-                        <li className="planet">
+                        <li className="planet" onClick={()=> setPlanet(europa)}>
                             <NavLink to="/destination/europa">EUROPA</NavLink>
                         </li>
-                        <li className="planet">
+                        <li className="planet" onClick={()=> setPlanet(titan)}>
                             <NavLink to="/destination/titan">TITAN</NavLink>
                         </li>
                     </ul>
