@@ -1,9 +1,23 @@
+// @keyframes alll{
+//     to{
+//         opacity: 1;
+//     }
+// }
+
 .home-container{
+    // opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #D0D6F9;
-    margin-top: 140px;
+    // margin-top: 140px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    // animation: alll .3s ease-in forwards;
     .introduce{
         flex: 50%;
         max-width: 400px;
@@ -11,6 +25,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 200px;
 
         h4{
             font-family: 'Barlow Condensed';
@@ -49,6 +64,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 200px;
+
         h4{
             font-family: 'Bellefair';
             font-style: normal;
@@ -64,12 +81,16 @@
 
 @media (max-width: 769px) {
     .home-container{
-        margin-top: 126px;
+        background-image: url("../../space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg") !important;
         flex-direction: column;
+        justify-content: unset;
         text-align: center;
         gap: 143px;
         .introduce{
-            margin: 0 !important;
+            flex: 0;
+            margin: 0;
+            margin-top: 200px;
+
             h1{
                 line-height: 135px;
             }
@@ -82,12 +103,15 @@
 
 @media (max-width: 500px) {
     .home-container{
-        margin-top: 43px;
+        background-image: url("../../space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg") !important;
+
         flex-direction: column;
         text-align: center;
         gap: 80px;
         .introduce{
-            margin: 0 !important;
+            margin: 0;
+            margin-top: 112px;
+
             h1{
                 line-height: 100px;
                 font-size: 80px;

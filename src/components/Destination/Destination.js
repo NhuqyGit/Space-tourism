@@ -5,42 +5,43 @@ import moon from "../../space-tourism-website-main/starter-code/assets/destinati
 import mars from "../../space-tourism-website-main/starter-code/assets/destination/image-mars.png"
 import europa from "../../space-tourism-website-main/starter-code/assets/destination/image-europa.png"
 import titan from "../../space-tourism-website-main/starter-code/assets/destination/image-titan.png"
+import desbg from "../../space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg";
 
 function Destination() {
     const [planet, setPlanet] = useState(moon);
     return ( 
-        <div className="destination-container">
-            <div className="destination-header">
-                <span>01</span>
-                <h4>Pick your destination</h4>
-            </div>
-            <div className="destination-content">
-                <div className="planet-image" style={{backgroundImage: `url(${planet})`}}></div>
-                <div className="des-introduce">
-                    <ul className="menu-planet">
-                        <li className="planet" onClick={()=> setPlanet(moon)}>
-                            <NavLink to="/destination/moon">MOON</NavLink>
-                        </li>
-                        <li className="planet" onClick={()=> setPlanet(mars)}>
-                            <NavLink to="/destination/mars">MARS</NavLink>
-                        </li>
-                        <li className="planet" onClick={()=> setPlanet(europa)}>
-                            <NavLink to="/destination/europa">EUROPA</NavLink>
-                        </li>
-                        <li className="planet" onClick={()=> setPlanet(titan)}>
-                            <NavLink to="/destination/titan">TITAN</NavLink>
-                        </li>
-                    </ul>
+        <div className="destination-container" style={{backgroundImage: `url(${desbg})`}}>
+            <div className="des-cover">
+                <div className="destination-header">
+                    <span>01</span>
+                    <h4>Pick your destination</h4>
+                </div>
+                <div className="destination-content">
+                    <div className="planet-image" style={{backgroundImage: `url(${planet})`}}></div>
+                    <div className="des-introduce">
+                        <ul className="menu-planet">
+                            <li className="planet" onClick={()=> setPlanet(moon)}>
+                                <NavLink to="/destination/moon">MOON</NavLink>
+                            </li>
+                            <li className="planet" onClick={()=> setPlanet(mars)}>
+                                <NavLink to="/destination/mars">MARS</NavLink>
+                            </li>
+                            <li className="planet" onClick={()=> setPlanet(europa)}>
+                                <NavLink to="/destination/europa">EUROPA</NavLink>
+                            </li>
+                            <li className="planet" onClick={()=> setPlanet(titan)}>
+                                <NavLink to="/destination/titan">TITAN</NavLink>
+                            </li>
+                        </ul>
 
-                    <div className="planet-content">
-                        <Outlet />
-                        {/* <div id="moon">MOON</div>
-                        <div id="mars">MARS</div>
-                        <div id="europa">EUROPA</div>
-                        <div id="titan">TITAN</div> */}
+                        <div className="planet-content">
+                            <Outlet />
+                        </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
      );
 }

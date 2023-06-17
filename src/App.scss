@@ -1,19 +1,19 @@
 .App{
-    height: 100vh;
-    background-size: cover;
-    transition: 0.3s ease-out;
+    // height: 100vh;
+    // background-size: cover;
+    // transition: 0.3s ease-out;
 }
 
 
 @media (max-width: 769px) {
-    .App{
-        background-image: url("./space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg") !important;
-    }
+    // .App{
+    //     background-image: url("./space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg") !important;
+    // }
 }
 
 @media (max-width: 500px) {
-    .App{
-        position: relative;
-        background-image: url("./space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg") !important;
-    }
+    // .App{
+    //     position: relative;
+    //     background-image: url("./space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg") !important;
+    // }
 }

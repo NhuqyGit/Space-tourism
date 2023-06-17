@@ -1,9 +1,11 @@
 import React from "react";
 import "./Home.scss";
+import homebg from "../../space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg";
+
 
 function Home() {
     return ( 
-        <div className="home-container">
+        <div className="home-container" style={{backgroundImage: `url(${homebg})`}}>
             <div className="introduce">
                 <h4>SO, YOU WANT TO TRAVEL TO</h4>
                 <h1>SPACE</h1>
