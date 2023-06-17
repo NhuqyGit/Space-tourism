@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.scss"
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -7,7 +7,7 @@ import Crew from "./components/Crew/Crew";
 import Technology from "./components/Technology/Technology";
 import Header from "./components/Header/Header";
 import Planet from "./components/Destination/Planet";
-import homebg from "./space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg";
+// import homebg from "./space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg";
 
 function App() {
   return (
