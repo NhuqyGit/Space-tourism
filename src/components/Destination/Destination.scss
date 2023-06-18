@@ -142,7 +142,7 @@
     }
 }
 
-@media (max-width: 1025px){
+@media (max-width: 1023px){
     .des-cover{
         padding: 175px 52px 0 52px !important;
         .destination-header{
@@ -183,6 +183,8 @@
 
                 .planet-time-travel{
                     justify-content: space-around;
+                    padding-bottom: 25px;
+
                 }
             }
         }
@@ -254,7 +256,7 @@
     }
 }
 
-@media (min-width: 426px) {
+@media (min-width: 1024px) {
     .destination-container{
         height: 100vh;
     }
