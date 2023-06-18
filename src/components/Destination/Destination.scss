@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     width: 100vw;
     z-index: -1;
     // padding: 0 150px;
@@ -198,7 +198,6 @@
 @media (max-width: 426px) {
     .destination-container{
         background-image: url("../../space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg") !important;
-
         .des-cover{
             padding: 88px 24px 0 24px !important;
             .destination-header{
@@ -252,5 +251,11 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 426px) {
+    .destination-container{
+        height: 100vh;
     }
 }
