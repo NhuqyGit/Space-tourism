@@ -57,8 +57,9 @@
     }
 
     .explore{
-        width: 246px;
-        height: 246px;
+        position: relative;
+        width: 242px;
+        height: 242px;
         background: white;
         border-radius: 50%;
         display: flex;
@@ -75,6 +76,28 @@
 
             letter-spacing: 2px;
             color: #0B0D17;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% + 150px);
+            height: calc(100% + 150px);
+            background: white;
+            mix-blend-mode: normal;
+            opacity: 0;
+            z-index: 10;
+            border-radius: 50%;
+            transition: opacity .3s ease;
+        }
+
+        &:active{
+            &::after{
+                opacity: 0.1;
+            }
         }
     }
 }

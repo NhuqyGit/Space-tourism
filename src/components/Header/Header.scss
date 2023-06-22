@@ -55,12 +55,14 @@
                     height: 3px;
                     background: white;
                     bottom: 0;
-                    transition: 0.5s;
+                    transition: 0.3s;
                 }
     
                 &:hover{
                     &:before{
                         width: 100%;
+                        mix-blend-mode: normal;
+                        opacity: 0.5;
                     }
                 }
             }
@@ -68,6 +70,7 @@
             .active{
                 &:before{
                     width: 100% !important;
+                    opacity: 1 !important;
                 }
             }
 
