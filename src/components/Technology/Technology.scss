@@ -2,7 +2,299 @@
     position: absolute;
     top: 0;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     width: 100vw;
     z-index: -1;
+
+    .tech-cover{
+        padding: 175px 0 0 150px;
+        .tech-header{
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-size: 25px;
+            line-height: 34px;
+            letter-spacing: 4.725px;
+            margin-bottom: 35px;
+
+            span{
+                font-weight: 700;
+                mix-blend-mode: normal;
+                opacity: 0.25;
+            }
+    
+            h4{
+                margin-left: 25px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+
+        .tech-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &--left{
+                display: flex;
+                // flex: 50%;
+                min-height: 272px;
+                .tech-control{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-right: 72px;
+                    .btn-control{
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                        border: 1px solid #FFF;
+                        opacity: 0.25;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: opacity .3s;
+                        div{
+                            opacity: 1;
+                            color: white;
+                            font-size: 28px;
+                        }
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                        
+                    }
+    
+                    .btn-active{
+                        opacity: 1;
+                        background-color: white;
+                        div{
+                            color: black;
+                        }
+                    }
+                }
+    
+                .introduce{
+                    max-width: 423px;
+                    h4{
+                        margin-bottom: 10px;
+                        color: #D0D6F9;
+                        font-size: 14px;
+                        font-family: "Barlow Condensed";
+                        letter-spacing: 2.7px;
+                    }
+    
+                    h1{
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        font-size: 50px;
+                        font-family: "Bellefair";
+                    }
+                    p{
+                        color: #D0D6F9;
+                        font-size: 16px;
+                        font-family: "Barlow";
+                        line-height: 28px;
+                        max-width: 400px;
+                    }
+                }
+            }
+
+            .info-image{
+                width: 400px;
+                height: 400px;
+                background-size: cover; 
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .tech-container{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1124px) {
+    .tech-cover{
+        padding-left: 80px !important;
+        .tech-content{
+            &--left{
+                .tech-control{
+                    margin-right: 35px !important;
+                    .btn-control{
+                        width: 58px !important;
+                        height: 58px !important;
+                    }
+                }
+            
+            }
+        
+        // .info-image{
+        //         background-image: url("../../space-tourism-website-main/starter-code/assets/technology/image-launch-vehicle-landscape.jpg") !important;
+        //     }
+            .info-image{
+                width: 380px !important;
+                height: 380px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+
+    .tech-cover{
+        padding: 0 !important;
+        padding-top: 175px !important;
+
+        .tech-header{
+            padding-left: 38px;
+        }
+
+        .tech-content{
+            flex-direction: column-reverse;
+            gap: 40px;
+
+            &--left{
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                .tech-control{
+                    margin-right: 0 !important;
+                    flex-direction: row !important;
+                    align-items: center;
+                    .btn-control{
+                        width: 60px !important;
+                        height: 60px !important;
+                        margin: 0 8px;
+                    }
+                }
+
+                .introduce{
+                    text-align: center;
+                    h1{
+                        font-size: 40px !important;
+                        margin: 16px 0 !important;
+                    }
+                    h4{
+                        font-size: 16px !important;
+                        margin: 0 !important;
+                    }
+                    p{
+                        max-width: none !important;
+                        margin-bottom: 87px;
+                    }
+                }
+            
+            }
+        
+            .info-image{
+                // background-image: url("../../space-tourism-website-main/starter-code/assets/technology/image-space-capsule-landscape.jpg") !important;
+                width: 100% !important;
+                height: 40vh !important;
+            }
+        }
+    }
+}
+
+
+// @media (max-width: 768px) {
+//     .info-image{
+//         height: 30vh !important;
+//     }
+// }
+
+// @media (max-width: 425px) {
+//     .info-image{
+//         height: 20vh !important;
+//     }
+// }
+
+// @media (max-width: 375px) {
+//     .info-image{
+//         height: 15vh !important;
+//     }
+// }
+
+@media (max-width: 768px) {
+    .tech-cover{
+        .tech-content{
+            .info-image{
+                // background-image: url("../../space-tourism-website-main/starter-code/assets/technology/image-space-capsule-landscape.jpg") !important;
+                width: 100% !important;
+                height: 30vh !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .tech-cover{
+        .tech-content{
+            .info-image{
+                // background-image: url("../../space-tourism-website-main/starter-code/assets/technology/image-space-capsule-landscape.jpg") !important;
+                width: 100% !important;
+                height: 20vh !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .tech-cover{
+        padding-top: 87px !important;
+        .tech-header{
+            align-items: center;
+            justify-content: center !important;
+            padding: 0;
+            font-size: 16px !important;
+            margin-bottom: 25px !important;
+            h4{
+                margin-left: 16px;
+            }
+        }
+        .tech-content{
+            gap: 26px;
+            &--left{
+                gap: 26px;
+                .tech-control{
+                    .btn-control{
+                        width: 40px !important;
+                        height: 40px !important;
+                        div{
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+                .introduce{
+                    padding: 0 13px;
+                    h4{
+                        font-size: 14px !important;
+                        letter-spacing: 2.362px !important;
+
+                    }
+
+                    h1{
+                        font-size: 24px !important;
+                    }
+
+                    p{
+                        font-size: 15px !important;
+                        line-height: 25px !important;
+                        min-width: 327px;
+                    }
+                }
+            }
+            .info-image{
+                // background-image: url("../../space-tourism-website-main/starter-code/assets/technology/image-space-capsule-landscape.jpg") !important;
+                width: 100% !important;
+                height: 15vh !important;
+            }
+        }
+    }
 }

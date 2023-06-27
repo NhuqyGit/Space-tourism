@@ -94,10 +94,14 @@
                 mix-blend-mode: normal;
                 opacity: 0.17;
                 cursor: pointer;
+                transition: opacity .3s;
+                &:hover{
+                    opacity: 0.500094473361969;
+                }
             }
 
             .btn-active{
-                opacity: 1;
+                opacity: 1 !important;
             }
         }
     }
