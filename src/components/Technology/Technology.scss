@@ -109,6 +109,8 @@
                 background-size: cover; 
                 background-position: center;
                 background-repeat: no-repeat;
+                transition: background-image 0.7s ease;
+
             }
         }
     }
@@ -201,25 +203,6 @@
         }
     }
 }
-
-
-// @media (max-width: 768px) {
-//     .info-image{
-//         height: 30vh !important;
-//     }
-// }
-
-// @media (max-width: 425px) {
-//     .info-image{
-//         height: 20vh !important;
-//     }
-// }
-
-// @media (max-width: 375px) {
-//     .info-image{
-//         height: 15vh !important;
-//     }
-// }
 
 @media (max-width: 768px) {
     .tech-cover{
