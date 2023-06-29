@@ -276,7 +276,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) or (min-height: 1000px) {
     .destination-container{
         height: 100vh;
     }
