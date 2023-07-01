@@ -19,7 +19,7 @@
             font-size: 25px;
             line-height: 34px;
             letter-spacing: 4.725px;
-            margin-bottom: 50px;
+            margin-bottom: 123px;
 
             span{
                 font-weight: 700;
@@ -43,7 +43,6 @@
                 font-weight: 400;
                 font-size: 32px;
                 line-height: 37px;
-                /* identical to box height */
 
                 text-transform: uppercase;
 
@@ -61,6 +60,7 @@
                 line-height: 64px;
                 text-transform: uppercase;
                 color: white;
+                margin-bottom: 15px;
             }
 
             p{
@@ -73,17 +73,17 @@
                 color: #D0D6F9;
             }
             .introduce{
-                width: 60%;
+                width: 62%;
             }
     
             .info-image{
-                width: 30%;
+                width: 35%;
                 position: absolute;
                 bottom: 0;
-                right: 10%;
+                right: 8%;
                 img{
                     // width: 100%;
-                    height: 510px;
+                    height: 500px;
                     
                 }
             }
@@ -92,6 +92,8 @@
 
         .control-content{
             display: flex;
+            // position: absolute;
+            // bottom: 50px;
 
             .btn-control{
                 width: 15px;
@@ -113,4 +115,54 @@
             }
         }
     }
+}
+
+@media (max-width: 1110px){
+    .crew-cover{
+        .crew-content{
+            .info-image{
+                img{
+                    height: 450px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1080px){
+    .crew-cover{
+        padding: 175px 100px !important;
+        padding-bottom: 0 !important;
+        .crew-header{
+            // margin-bottom: 100px !important;
+        }
+
+        .crew-content{
+            .introduce{
+                p{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px)  {
+    // .crew-cover{
+    //     padding: 150px 100px !important;
+    //     padding-bottom: 0 !important;
+    //     .crew-header{
+    //         margin-bottom: 100px !important;
+    //     }
+
+    //     .crew-content{
+    //         .introduce{
+    //             p{
+    //                 margin-bottom: 25px;
+    //             }
+    //         }
+    //     }
+    // }
 }

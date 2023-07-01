@@ -42,7 +42,7 @@ function Info(props) {
             
             {/* <div className="info-image" style={{backgroundImage: `url(${info[props.pos].image})`}}> */}
             <div className="info-image">
-                <img src={info[props.pos].image}></img>
+                <img src={info[props.pos].image} alt=""></img>
             </div>
         </>
     );
