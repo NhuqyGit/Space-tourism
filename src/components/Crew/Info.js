@@ -33,13 +33,17 @@ function Info(props) {
     
     return ( 
         <>
-            <div className="introdce">
+            <div className="introduce">
                 <h4>{info[props.pos].position}</h4>
                 <h1>{info[props.pos].name}</h1>
                 <p>{info[props.pos].introduce}</p>
             </div>
 
-            <div className="info-image" style={{backgroundImage: `url(${info[props.pos].image})`}}></div>
+            
+            {/* <div className="info-image" style={{backgroundImage: `url(${info[props.pos].image})`}}> */}
+            <div className="info-image">
+                <img src={info[props.pos].image}></img>
+            </div>
         </>
     );
 }

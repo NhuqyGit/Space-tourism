@@ -166,6 +166,11 @@
             h4{
                 font-size: 20px;
             }
+
+            &::after{
+                width: calc(100% + 110px);
+                height: calc(100% + 110px);
+            }
         }
     }
 }
